@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vidyastu Survey Form</title>
+</head>
+<body>
+    <style>
+        body {
+            text-align: center;
+            background-color: rgb(41, 87, 224);
+        }
+        form{
+            background-color: white;
+           width: 70%;
+           height: 100%;
+           margin: auto;
+           padding: 3vh;
+        }
+        button{
+            background-color:  rgb(41, 87, 224);
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+        h1{
+            color: white;
+        }
+        h4{
+            color: rgb(204, 91, 91);
+        }
+        input{
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid gray; 
+            margin: 5px;
+
+        }
+        select{
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid gray; 
+            margin: 5px;
+        }
+        textarea{
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid gray; 
+            margin: 5px;
+        }
+        footer{
+            color: aliceblue;
+            padding: 10px;
+        }
+    </style>
+    <h1>Vidyastu Survey Form</h1>
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <h4>Let us know how we can improve Vidyastu for you</h4>
+        <label for="name">* Name</label>&nbsp;&nbsp;&nbsp;  
+        <input type="text" name="name" id="name" placeholder="Enter your name" required>
+        <br>
+        <br>
+        <label for="email">* Email</label>&nbsp;&nbsp;&nbsp;  
+        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+        <br>
+        <br>
+        <label for="password">* Password</label> &nbsp;&nbsp;&nbsp;
+        <input type="password" name="password" id="password" placeholder="Enter your password" required> &nbsp;&nbsp;&nbsp; &nbsp; 
+        <br>
+        <br>
+        <label for="phone">* Phone</label> &nbsp;&nbsp;
+        
+        <input type="tel" name="phone" id="phone" placeholder="Enter your phone number" required>
+        
+     
+        <br>
+        <br>
+        <label for="age">Age</label> &nbsp;&nbsp;
+        <input type="number" name="age" id="age" placeholder="Enter your age">
+        <br>
+        <br>
+        <label for="options">* Which option best describes your current role?</label> &nbsp;&nbsp;&nbsp;
+        <select name="options" id="options">
+            <option value="student">Student</option>
+            <option value="job">Full Time Job</option>
+            <option value="learner">Full Time Learner</option>
+            <option value="preferNo">Prefer not to say</option>
+            <option value="other">Other</option>
+        </select>
+       <br>
+       <br>
+       <label for="checkbox" >* how you likely is that you would recommend Vidyastu to a friend</label> &nbsp;&nbsp;&nbsp;
+       <input type="checkbox" name="checkbox" id="checkbox" value="definitely"> Definitely
+       <input type="checkbox" name="checkbox" id="checkbox" value="likely"> Maybe
+       <input type="checkbox" name="checkbox" id="checkbox" value="not-sure"> Not sure
+       <br>
+       <br>
+       <label for="options">What do you like most in Vidyastu?</label>&nbsp;&nbsp;&nbsp;
+       <select name="options" id="options" required>
+        <option value="challenges">Challenges</option>
+        <option value="projects">Projects</option>
+        <option value="community">Community</option>
+        <option value="open-source">Open Source</option>
+       </select>
+       <br>
+       <br>
+       <label for="radio">* What is your favorite feature of Vidyastu?</label>&nbsp;&nbsp;&nbsp; 
+       <input type="radio" name="radio" id="radio" value="challenges"> Challenges
+       <input type="radio" name="radio" id="radio" value="projects"> Projects
+       <input type="radio" name="radio" id="radio" value="community"> Community
+       <input type="radio" name="radio" id="radio" value="open-source"> Open Source
+       <br>
+       <br>
+       <label for="comments">* Any comments or suggestions?</label> &nbsp;&nbsp;&nbsp;
+       <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+       <br>
+       <br>
+       <br>
+        <button>
+            Submit
+        </button>
+    </form>
+    <footer>
+        @Created by Sayan Datta . All rights reserved
+    </footer>
+</body>
+</html>
